@@ -23,12 +23,26 @@ Tectelo Consulting helps startups and engineering teams turn fragile AI demos in
 
 ```
 TecTelo/
-├── index.html                           # Modern, responsive single-page storefront
-├── styles.css                           # Enterprise dark theme & responsive styles
-├── script.js                            # Interactive form, booking modal & UI logic
-├── CONSULTING_TOOLKIT.md                # Discovery checklist, outreach templates & SOW legal clauses
-├── AI_Consulting_Plan_Revised-Claude.docx # Strategic 60-90 day business plan
-└── .gitignore                           # Git ignore rules
+│
+├── index.html                           # Main landing page & architecture overview
+├── about.html                           # Credentials, operating model & founder story
+├── services.html                        # Productized services catalog & portfolio demos
+├── contact.html                         # Office location, direct channels & inquiry form
+│
+├── css/
+│   └── style.css                        # Enterprise dark theme & responsive styles
+│
+├── js/
+│   └── main.js                          # Multi-page nav, booking modal & interactive logic
+│
+├── images/
+│   ├── logo.svg                         # Vector brand mark & logo
+│   ├── hero-image.webp                  # High-resolution architectural hero visual
+│   └── services/                        # Service architecture diagrams & illustrations
+│
+├── assets/                              # Practice assets, downloads & templates
+│
+└── favicon.ico                          # Multi-resolution favicon icon
 ```
 
 ---
@@ -53,7 +67,7 @@ python3 -m http.server 8000
 ## Contact & Inquiries
 
 - **Location**: 5900 Balcones Drive Ste 100, Austin, TX 78731
-- **Email**: raj.akula@praxifyai.com
+- **Email**: raj.akula@tectelo.com
 - **Phone**: (737) 610-3312
 - **LinkedIn**: [linkedin.com/in/rajaakula](https://www.linkedin.com/in/rajaakula)
 

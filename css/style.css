@@ -220,8 +220,13 @@ img, svg {
   padding: 0.25rem 0;
 }
 
-.main-nav a:not(.btn):hover {
+.main-nav a:not(.btn):hover,
+.main-nav a.active:not(.btn) {
   color: var(--text-main);
+}
+
+.main-nav a.active:not(.btn) {
+  color: var(--accent-cyan);
 }
 
 .main-nav a:not(.btn)::after {
@@ -235,7 +240,8 @@ img, svg {
   transition: width 0.2s ease;
 }
 
-.main-nav a:not(.btn):hover::after {
+.main-nav a:not(.btn):hover::after,
+.main-nav a.active:not(.btn)::after {
   width: 100%;
 }
 
@@ -1631,4 +1637,76 @@ img, svg {
     display: none;
   }
 }
+
+/* ==========================================================================
+   Multi-Page Subpage Layouts & Visual Assets
+   ========================================================================== */
+
+.page-hero {
+  padding: 4.5rem 0 3.25rem;
+  background: radial-gradient(circle at 50% 0%, rgba(56, 189, 248, 0.12) 0%, transparent 70%);
+  border-bottom: 1px solid var(--border-subtle);
+  position: relative;
+}
+
+.page-hero-inner {
+  max-width: 860px;
+}
+
+.page-hero h1 {
+  font-size: clamp(2.2rem, 4vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.page-hero-lead {
+  font-size: 1.15rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 2rem;
+}
+
+.hero-image-wrap {
+  margin-top: 2.25rem;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5), var(--shadow-glow);
+  position: relative;
+}
+
+.hero-image-wrap img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-image-caption {
+  padding: 0.75rem 1.25rem;
+  background: rgba(9, 13, 22, 0.9);
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+.service-graphic-wrap {
+  margin-bottom: 1.25rem;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #090d16;
+}
+
+.service-graphic-wrap img,
+.service-graphic-wrap svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 

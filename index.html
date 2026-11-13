@@ -15,12 +15,13 @@
   <meta property="og:description" content="Bridging the gap between fragile AI demos and production-grade systems. Austin, TX." />
   <meta property="og:site_name" content="Tectelo Consulting" />
 
-  <!-- Favicon SVG -->
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28' fill='none'%3E%3Crect x='2' y='2' width='24' height='24' rx='6' fill='%230f172a' stroke='%2338bdf8' stroke-width='2'/%3E%3Cpath d='M8 10H20M14 10V20' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='18' r='2' fill='%2338bdf8'/%3E%3Ccircle cx='19' cy='18' r='2' fill='%2338bdf8'/%3E%3C/svg%3E" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" type="image/svg+xml" href="images/logo.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <!-- Top Announcement / Positioning Bar -->
@@ -47,7 +48,7 @@
   <!-- Navigation -->
   <header class="site-header" id="top">
     <div class="container nav-container">
-      <a href="#top" class="brand" aria-label="Tectelo Consulting Home">
+      <a href="index.html" class="brand" aria-label="Tectelo Consulting Home">
         <div class="brand-mark">
           <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <rect x="2" y="2" width="24" height="24" rx="6" stroke="currentColor" stroke-width="2"/>
@@ -69,11 +70,10 @@
       </button>
 
       <nav class="main-nav" id="mainNav">
-        <a href="#services">Services</a>
-        <a href="#healthcare">Healthcare AI</a>
-        <a href="#demos">Portfolio Demos</a>
-        <a href="#about">Credentials</a>
-        <a href="#contact">Location &amp; Contact</a>
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services &amp; Demos</a>
+        <a href="about.html">About &amp; Credentials</a>
+        <a href="contact.html">Contact &amp; Location</a>
         <a href="#bookingModal" class="btn btn-bookings btn-sm trigger-booking-modal">
           <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" style="margin-right:2px;">
             <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
@@ -100,8 +100,8 @@
           </p>
 
           <div class="hero-actions">
-            <a href="#services" class="btn btn-primary">Explore Services</a>
-            <a href="#contact" class="btn btn-secondary">Request Architecture Review</a>
+            <a href="services.html" class="btn btn-primary">Explore Services</a>
+            <a href="contact.html" class="btn btn-secondary">Request Architecture Review</a>
             <a href="#bookingModal" class="btn btn-bookings trigger-booking-modal">
               <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
                 <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
@@ -194,6 +194,14 @@
                   <span class="metric-val">PHI-Aware Controls</span>
                 </div>
               </div>
+            </div>
+          </div>
+
+          <div class="hero-image-wrap">
+            <img src="images/hero-image.webp" alt="TecTelo Enterprise AI Architecture &amp; Agent Engineering Visual" width="1376" height="768" loading="eager" />
+            <div class="hero-image-caption">
+              <span>TECTELO PRODUCTION ARCHITECTURE // AGENT STATE LOOP</span>
+              <span>ENTERPRISE GRADE</span>
             </div>
           </div>
         </div>
@@ -624,7 +632,7 @@
               <div class="info-block">
                 <span class="info-label">DIRECT EMAIL</span>
                 <p class="info-value">
-                  <a href="mailto:raj.akula@praxifyai.com" id="contactEmailLink">raj.akula@praxifyai.com</a>
+                  <a href="mailto:raj.akula@tectelo.com" id="contactEmailLink">raj.akula@tectelo.com</a>
                 </p>
                 <p class="info-sub">For architecture assessments, SOW inquiries &amp; advisory retainers</p>
               </div>
@@ -701,7 +709,7 @@
               </div>
 
               <div class="form-actions">
-                <button type="submit" class="btn btn-primary btn-full">Send Inquiry to raj.akula@praxifyai.com</button>
+                <button type="submit" class="btn btn-primary btn-full">Send Inquiry to raj.akula@tectelo.com</button>
               </div>
               <div id="formFeedback" class="form-feedback" aria-live="polite" hidden></div>
             </form>
@@ -726,7 +734,7 @@
       
       <div class="modal-actions">
         <!-- Microsoft Bookings Launch Button (dummy URL as requested) -->
-        <a href="https://outlook.office365.com/owa/calendar/TecteloConsulting@praxifyai.com/bookings/" target="_blank" rel="noopener noreferrer" class="btn btn-bookings btn-full">
+        <a href="https://outlook.office365.com/owa/calendar/TecteloConsulting@tectelo.com/bookings/" target="_blank" rel="noopener noreferrer" class="btn btn-bookings btn-full">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
             <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
           </svg>
@@ -778,16 +786,17 @@
           5900 Balcones Drive Ste 100<br />
           Austin, TX 78731<br />
           Direct: <a href="tel:+17376103312" style="color:var(--accent-cyan);">(737) 610-3312</a> &bull; 
-          <a href="mailto:raj.akula@praxifyai.com" style="color:var(--accent-cyan);">raj.akula@praxifyai.com</a>
+          <a href="mailto:raj.akula@tectelo.com" style="color:var(--accent-cyan);">raj.akula@tectelo.com</a>
         </div>
       </div>
 
       <div class="footer-links">
-        <a href="#services">Services</a>
-        <a href="#healthcare">Healthcare AI</a>
-        <a href="#demos">Portfolio Demos</a>
-        <a href="#about">Credentials</a>
-        <a href="#contact">Contact &amp; Location</a>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="services.html#healthcare">Healthcare AI</a>
+        <a href="services.html#demos">Portfolio Demos</a>
+        <a href="about.html">Credentials</a>
+        <a href="contact.html">Contact &amp; Location</a>
         <a href="https://www.linkedin.com/in/rajaakula" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
       </div>
 
@@ -798,6 +807,6 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

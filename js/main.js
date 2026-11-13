@@ -34,6 +34,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const serviceSelect = document.getElementById('serviceSelect');
   const serviceLinks = document.querySelectorAll('[data-service]');
 
+  // Check URL query param for service selection on page load (multi-page support)
+  const urlParams = new URLSearchParams(window.location.search);
+  const serviceParam = urlParams.get('service');
+  if (serviceSelect && serviceParam) {
+    for (let i = 0; i < serviceSelect.options.length; i++) {
+      if (serviceSelect.options[i].value.toLowerCase().includes(serviceParam.toLowerCase()) ||
+          serviceParam.toLowerCase().includes(serviceSelect.options[i].value.toLowerCase())) {
+        serviceSelect.selectedIndex = i;
+        break;
+      }
+    }
+  }
+
   serviceLinks.forEach(link => {
     link.addEventListener('click', (e) => {
       const serviceName = link.getAttribute('data-service');
@@ -74,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const selectedService = document.getElementById('serviceSelect')?.value;
       const projectDetails = document.getElementById('projectDetails')?.value.trim();
 
-      const recipient = 'raj.akula@praxifyai.com';
+      const recipient = 'raj.akula@tectelo.com';
       const subject = encodeURIComponent(`Tectelo Consulting Inquiry: ${selectedService} - ${fullName}`);
       const body = encodeURIComponent(
 `Hi Raj,

@@ -10,7 +10,7 @@ When your official Microsoft Bookings calendar link is ready:
 1. Open [`index.html`](file:///Users/rajakula/Documents/Code/TecTelo/index.html).
 2. Search for:
    ```html
-   https://outlook.office365.com/owa/calendar/TecteloConsulting@praxifyai.com/bookings/
+   https://outlook.office365.com/owa/calendar/TecteloConsulting@tectelo.com/bookings/
    ```
 3. Replace that URL with your published Microsoft Bookings URL.
 
@@ -69,7 +69,7 @@ When your official Microsoft Bookings calendar link is ready:
 > Here’s our site and portfolio demos: https://tectelo.com
 >
 > Best,  
-> **Raj Akula** &bull; raj.akula@praxifyai.com
+> **Raj Akula** &bull; raj.akula@tectelo.com
 
 ---
 
