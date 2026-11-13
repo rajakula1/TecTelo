@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tectelo Consulting | AI Architecture &amp; Agent Engineering</title>
+  <meta name="description" content="Tectelo Consulting helps startups and enterprises turn AI prototypes into production-ready agentic systems — Voice AI, RAG, multi-agent orchestration, healthcare AI, security, and evaluation." />
+  <meta name="keywords" content="AI Architect, Agent Engineering, Voice AI, RAG, Healthcare AI, Multi-Agent Systems, Pipecat, Deepgram, AWS Solution Architect, Austin AI Consulting" />
+  <meta name="author" content="Raj Akula - Tectelo Consulting LLC" />
+  <meta name="theme-color" content="#090d16" />
+
+  <!-- Open Graph / Social Meta -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Tectelo Consulting | AI Architecture &amp; Agent Engineering" />
+  <meta property="og:description" content="Bridging the gap between fragile AI demos and production-grade systems. Austin, TX." />
+  <meta property="og:site_name" content="Tectelo Consulting" />
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28' fill='none'%3E%3Crect x='2' y='2' width='24' height='24' rx='6' fill='%230f172a' stroke='%2338bdf8' stroke-width='2'/%3E%3Cpath d='M8 10H20M14 10V20' stroke='%23ffffff' stroke-width='2.2' stroke-linecap='round'/%3E%3Ccircle cx='9' cy='18' r='2' fill='%2338bdf8'/%3E%3Ccircle cx='19' cy='18' r='2' fill='%2338bdf8'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Top Announcement / Positioning Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <span class="status-pill">
+        <span class="status-dot"></span>
+        Austin, TX &bull; Accepting Q4 Architecture Assessments &amp; Fractional Retainers
+      </span>
+      <div class="top-bar-meta">
+        <span>AI Architect</span>
+        <span class="sep">&bull;</span>
+        <span>Agentic AI</span>
+        <span class="sep">&bull;</span>
+        <span>Voice AI</span>
+        <span class="sep">&bull;</span>
+        <span>RAG</span>
+        <span class="sep">&bull;</span>
+        <span>Healthcare AI</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="site-header" id="top">
+    <div class="container nav-container">
+      <a href="#top" class="brand" aria-label="Tectelo Consulting Home">
+        <div class="brand-mark">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="24" height="24" rx="6" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 10H20M14 10V20" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/>
+            <circle cx="9" cy="18" r="2" fill="#38BDF8"/>
+            <circle cx="19" cy="18" r="2" fill="#38BDF8"/>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Tectelo Consulting</span>
+          <span class="brand-sub">AI Architecture &amp; Agent Engineering</span>
+        </div>
+      </a>
+
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#services">Services</a>
+        <a href="#healthcare">Healthcare AI</a>
+        <a href="#demos">Portfolio Demos</a>
+        <a href="#about">Credentials</a>
+        <a href="#contact">Location &amp; Contact</a>
+        <a href="#bookingModal" class="btn btn-bookings btn-sm trigger-booking-modal">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" style="margin-right:2px;">
+            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+          </svg>
+          Book via MS Bookings
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">
+            <code>PRODUCTION AI SYSTEMS &amp; ENTERPRISE ARCHITECTURE</code>
+          </div>
+          <h1>
+            Turn AI Prototypes into <span class="gradient-text">Production-Ready Agentic Systems</span>
+          </h1>
+          <p class="hero-lead">
+            <strong>Tectelo Consulting</strong> helps startups and engineering teams bridge the gap between fragile LLM demos and reliable production systems &mdash; specializing in multi-agent orchestration, real-time Voice AI, hybrid RAG, healthcare AI, enterprise integrations, security, and rigorous evaluation.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="#contact" class="btn btn-secondary">Request Architecture Review</a>
+            <a href="#bookingModal" class="btn btn-bookings trigger-booking-modal">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+              </svg>
+              Schedule via Microsoft Bookings
+            </a>
+          </div>
+
+          <div class="credibility-strip">
+            <div class="cred-item">
+              <strong>18+ Years</strong>
+              <span>Enterprise Architecture</span>
+            </div>
+            <div class="cred-divider"></div>
+            <div class="cred-item">
+              <strong>AWS SAP</strong>
+              <span>Solutions Architect Pro</span>
+            </div>
+            <div class="cred-divider"></div>
+            <div class="cred-item">
+              <strong>TOGAF &amp; SAFe</strong>
+              <span>Certified Architect</span>
+            </div>
+            <div class="cred-divider"></div>
+            <div class="cred-item">
+              <strong>Austin, TX</strong>
+              <span>Headquarters</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Architecture Blueprint Card -->
+        <div class="hero-visual" aria-label="Reference Production AI Architecture">
+          <div class="arch-card">
+            <div class="arch-header">
+              <div class="window-dots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="arch-title">tectelo://reference-agent-architecture.yaml</span>
+              <span class="arch-badge">PRODUCTION GRADE</span>
+            </div>
+
+            <div class="arch-body">
+              <div class="arch-layer">
+                <div class="layer-label">01 // INGRESS &amp; REAL-TIME CHANNELS</div>
+                <div class="layer-nodes">
+                  <span class="node">WebRTC / WebSockets</span>
+                  <span class="node">Pipecat Voice Pipeline</span>
+                  <span class="node">REST / Webhook APIs</span>
+                </div>
+              </div>
+
+              <div class="arch-connector">
+                <span>Streaming STT (Deepgram) &bull; Auth &amp; Rate Limiting &bull; PHI Guardrails</span>
+              </div>
+
+              <div class="arch-layer highlight-layer">
+                <div class="layer-label">02 // AGENT ORCHESTRATION &amp; STATE</div>
+                <div class="layer-nodes">
+                  <span class="node node-accent">Planner &amp; Router Agent</span>
+                  <span class="node node-accent">Deterministic Tool Calling</span>
+                  <span class="node node-accent">Human-in-the-Loop Gate</span>
+                </div>
+              </div>
+
+              <div class="arch-connector">
+                <span>Hybrid Vector + Keyword Search &bull; Cross-Encoder Reranking</span>
+              </div>
+
+              <div class="arch-layer">
+                <div class="layer-label">03 // KNOWLEDGE, TOOLS &amp; ENTERPRISE INTEGRATIONS</div>
+                <div class="layer-nodes">
+                  <span class="node">Citation-Grounded RAG</span>
+                  <span class="node">FHIR / HL7 &amp; EHR APIs</span>
+                  <span class="node">Exa / External Search</span>
+                </div>
+              </div>
+
+              <div class="arch-footer">
+                <div class="metric-chip">
+                  <span class="metric-label">Voice Turn Latency</span>
+                  <span class="metric-val">&lt; 650ms</span>
+                </div>
+                <div class="metric-chip">
+                  <span class="metric-label">Observability</span>
+                  <span class="metric-val">Traces + Eval Suite</span>
+                </div>
+                <div class="metric-chip">
+                  <span class="metric-label">Security</span>
+                  <span class="metric-val">PHI-Aware Controls</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Service Portfolio -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PRODUCTIZED CONSULTING PORTFOLIO</span>
+          <h2>Fixed-Scope Architecture &amp; Engineering Services</h2>
+          <p>
+            No open-ended billing surprises or junior handoffs. Every engagement is scoped around concrete technical deliverables, clear timelines, and production-grade patterns. Contact us for custom scoping and pricing.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Service 1 -->
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-meta">
+                <span class="service-step">SERVICE 01 &bull; ENTRY PRODUCT</span>
+                <span class="service-time">3&ndash;5 hrs + 60-min live review</span>
+              </div>
+              <h3>AI Architecture Assessment</h3>
+              <div class="service-price">
+                <span class="price-amount contact-pricing">Contact for Pricing</span>
+                <span class="price-note">Fixed-scope assessment, risk audit &amp; roadmap</span>
+              </div>
+              <p class="service-desc">
+                Provide your existing architecture, product specification, or technical bottleneck. Receive a comprehensive written review, risk analysis, and concrete implementation roadmap.
+              </p>
+            </div>
+            <div class="service-deliverables">
+              <h4>Included Deliverables</h4>
+              <ul>
+                <li>Current architecture &amp; bottleneck assessment</li>
+                <li>LLM &amp; foundation model selection recommendations</li>
+                <li>Agent orchestration &amp; tool-calling architecture</li>
+                <li>RAG pipeline &amp; retrieval accuracy assessment</li>
+                <li>Security, access-control &amp; data boundary review</li>
+                <li>Scalability, concurrency &amp; latency optimization</li>
+                <li>Token &amp; infrastructure cost optimization</li>
+                <li>Evaluation &amp; production observability strategy</li>
+                <li>Phased implementation roadmap + 60-minute live review</li>
+              </ul>
+            </div>
+            <div class="service-Action">
+              <a href="#contact" class="btn btn-outline btn-full" data-service="AI Architecture Assessment">Request Assessment Scope</a>
+            </div>
+          </article>
+
+          <!-- Service 2 -->
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-meta">
+                <span class="service-step">SERVICE 02 &bull; PRIMARY PROJECT</span>
+                <span class="service-time">Typically 8&ndash;15 hrs delivery</span>
+              </div>
+              <h3>AI Agent Prototype</h3>
+              <div class="service-price">
+                <span class="price-amount contact-pricing">Contact for Pricing</span>
+                <span class="price-note">Tailored to workflow &amp; tool complexity</span>
+              </div>
+              <p class="service-desc">
+                A working, clean-room proof-of-concept connecting an LLM or multi-agent framework to real business APIs, knowledge bases, and deterministic workflows.
+              </p>
+            </div>
+            <div class="service-deliverables">
+              <h4>Representative Builds</h4>
+              <ul>
+                <li>Autonomous research agents using web/search tools (e.g., Exa)</li>
+                <li>Customer-support agents integrated with knowledge bases &amp; ticketing</li>
+                <li>Internal enterprise knowledge agents powered by hybrid RAG</li>
+                <li>Transactional workflow agents integrating core business APIs</li>
+                <li>Multi-agent orchestration &amp; supervisor-worker topologies</li>
+                <li>Human-in-the-loop approval &amp; confidence escalation workflows</li>
+                <li>Clean repository, architecture diagram &amp; handoff documentation</li>
+              </ul>
+            </div>
+            <div class="service-Action">
+              <a href="#contact" class="btn btn-outline btn-full" data-service="AI Agent Prototype">Scope an Agent Prototype</a>
+            </div>
+          </article>
+
+          <!-- Service 3 -->
+          <article class="service-card">
+            <div class="service-top">
+              <div class="service-meta">
+                <span class="service-step">SERVICE 03 &bull; SPECIALIZED BUILD</span>
+                <span class="service-time">Typically 10&ndash;20 hrs delivery</span>
+              </div>
+              <h3>Voice AI Prototype</h3>
+              <div class="service-price">
+                <span class="price-amount contact-pricing">Contact for Pricing</span>
+                <span class="price-note">Real-time conversational pipeline</span>
+              </div>
+              <p class="service-desc">
+                Low-latency conversational voice agents engineered with streaming STT, TTS, WebSockets/WebRTC, Pipecat, Deepgram, ElevenLabs, and stateful interruption handling.
+              </p>
+            </div>
+            <div class="service-deliverables">
+              <h4>Capabilities &amp; Use Cases</h4>
+              <ul>
+                <li>Real-time appointment scheduling &amp; calendar integration agents</li>
+                <li>Inbound/outbound lead qualification voice workflows</li>
+                <li>Customer-service &amp; automated tier-1 voice resolution</li>
+                <li>Healthcare patient intake &amp; administrative voice agents</li>
+                <li>Intelligent FAQ, triage &amp; department routing agents</li>
+                <li>Warm human escalation &amp; deterministic fallback workflows</li>
+                <li>End-to-end turn latency tuning &amp; conversational state management</li>
+              </ul>
+            </div>
+            <div class="service-Action">
+              <a href="#contact" class="btn btn-outline btn-full" data-service="Voice AI Prototype">Scope a Voice AI Build</a>
+            </div>
+          </article>
+
+          <!-- Service 4 (Featured Retainer) -->
+          <article class="service-card featured-card">
+            <div class="featured-ribbon">STRATEGIC ADVISORY TIER</div>
+            <div class="service-top">
+              <div class="service-meta">
+                <span class="service-step">SERVICE 04 &bull; RECURRING RETAINER</span>
+                <span class="service-time">Dedicated Monthly Time Box</span>
+              </div>
+              <h3>Fractional AI Architect</h3>
+              <div class="service-price">
+                <span class="price-amount contact-pricing">Contact for Pricing</span>
+                <span class="price-note">Predictable monthly senior architectural advisory</span>
+              </div>
+              <p class="service-desc">
+                Dedicated senior AI architecture leadership for startups and engineering teams that need principal-level guidance without a full-time executive hire.
+              </p>
+            </div>
+            <div class="service-deliverables">
+              <h4>Ongoing Retainer Scope</h4>
+              <ul>
+                <li>Continuous architecture reviews &amp; system design sign-off</li>
+                <li>AI technology stack, vendor &amp; model selection governance</li>
+                <li>Production multi-agent &amp; RAG architecture design</li>
+                <li>Critical PR, prompt architecture &amp; design reviews</li>
+                <li>Automated AI evaluation harnesses &amp; regression strategy</li>
+                <li>Quarterly technical roadmap development &amp; build-vs-buy analysis</li>
+                <li>Direct mentoring for internal software &amp; ML engineers</li>
+              </ul>
+            </div>
+            <div class="service-Action">
+              <a href="#contact" class="btn btn-primary btn-full" data-service="Fractional AI Architect">Inquire About Retainer Availability</a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Recommended Engagement Progression -->
+        <div class="progression-banner">
+          <div class="progression-title">
+            <strong>Recommended Client Journey</strong>
+            <span>Designed to de-risk technical decisions before committing to larger builds</span>
+          </div>
+          <div class="progression-steps">
+            <div class="p-step">
+              <span class="p-num">1</span>
+              <div>
+                <strong>AI Architecture Assessment</strong>
+                <small>Validate design &amp; roadmap</small>
+              </div>
+            </div>
+            <span class="p-arrow">&rarr;</span>
+            <div class="p-step">
+              <span class="p-num">2</span>
+              <div>
+                <strong>Voice or Agent Prototype</strong>
+                <small>Prove value in working code</small>
+              </div>
+            </div>
+            <span class="p-arrow">&rarr;</span>
+            <div class="p-step">
+              <span class="p-num">3</span>
+              <div>
+                <strong>Fractional AI Architect</strong>
+                <small>Scale smoothly to production</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Healthcare AI Specialization -->
+    <section class="section section-alt" id="healthcare">
+      <div class="container">
+        <div class="healthcare-layout">
+          <div class="healthcare-info">
+            <span class="section-tag">DOMAIN SPECIALIZATION</span>
+            <h2>Healthcare AI Architecture &amp; Clinical Workflow Systems</h2>
+            <p>
+              Healthcare AI demands more than prompt engineering. Drawing on 18 years of enterprise architecture experience &mdash; including enterprise architecture at Fortune 50 healthcare scale and shipping production multi-agent clinical systems &mdash; Tectelo Consulting designs AI architectures built for safety, interoperability, and auditability.
+            </p>
+
+            <div class="hc-capabilities">
+              <div class="hc-item">
+                <span class="hc-icon">&#9877;</span>
+                <div>
+                  <h4>Clinical &amp; Administrative Agents</h4>
+                  <p>Multi-agent orchestration for intake, triage, scheduling, prior authorization research, and structured administrative workflows.</p>
+                </div>
+              </div>
+              <div class="hc-item">
+                <span class="hc-icon">&#8644;</span>
+                <div>
+                  <h4>FHIR / HL7 &amp; EHR Integration Architecture</h4>
+                  <p>Clean integration patterns for FHIR R4 resources, HL7 v2 messages, and secure API gateway boundaries with clinical systems of record.</p>
+                </div>
+              </div>
+              <div class="hc-item">
+                <span class="hc-icon">&#128269;</span>
+                <div>
+                  <h4>Citation-Grounded Healthcare RAG</h4>
+                  <p>High-precision retrieval over clinical guidelines, payer policies, and medical literature with strict citation traceability and hallucination controls.</p>
+                </div>
+              </div>
+              <div class="hc-item">
+                <span class="hc-icon">&#9989;</span>
+                <div>
+                  <h4>Human-in-the-Loop &amp; Auditability</h4>
+                  <p>Explicit clinician/operator approval gates, immutable audit logs, confidence scoring, and deterministic fallback pathways.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Strict PHI & Compliance Guardrails Box -->
+          <aside class="phi-card" aria-labelledby="phi-heading">
+            <div class="phi-badge">COMPLIANCE &amp; DATA GOVERNANCE POLICY</div>
+            <h3 id="phi-heading">Strict PHI &amp; BAA Engagement Protocol</h3>
+            <p>
+              We enforce strict security boundaries from the very first discovery call to protect your organization and patients:
+            </p>
+            <ul class="phi-list">
+              <li>
+                <strong>Zero Unprotected PHI:</strong> No real Protected Health Information (PHI) is accepted or reviewed during discovery calls or initial assessments without an executed Business Associate Agreement (BAA).
+              </li>
+              <li>
+                <strong>Non-PHI by Default:</strong> Architecture assessments and rapid prototypes operate strictly on system schemas, data flow diagrams, and synthetic datasets.
+              </li>
+              <li>
+                <strong>Scoped BAA Engagements:</strong> When an implementation requires live PHI access, it is governed under a dedicated SOW with a signed BAA, isolated cloud environments, and explicit access controls.
+              </li>
+              <li>
+                <strong>Clean-Room Deliverables:</strong> All consulting deliverables are engineered independently under Tectelo Consulting with clear IP assignment scoped to your Statement of Work.
+              </li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary btn-full">Discuss a Healthcare AI Architecture</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Demonstrations -->
+    <section class="section" id="demos">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ENGINEERING PROOF &bull; CLEAN-ROOM SHOWCASES</span>
+          <h2>Reference Portfolio Demonstrations</h2>
+          <p>
+            Three focused reference architectures demonstrating production patterns across autonomous research agents, low-latency Voice AI, and citation-backed Healthcare RAG using 100% synthetic, non-PHI data.
+          </p>
+        </div>
+
+        <div class="demos-grid">
+          <!-- Demo 1 -->
+          <article class="demo-card">
+            <div class="demo-header">
+              <span class="demo-type">MULTI-STEP RESEARCH AGENT</span>
+              <span class="demo-status">Showcase 01</span>
+            </div>
+            <h3>HealthTech Scout</h3>
+            <p class="demo-summary">
+              An autonomous research and technical intelligence agent that decomposes complex queries, executes neural web searches, cross-validates claims, and compiles structured reports with verified inline citations.
+            </p>
+            <div class="demo-arch-flow">
+              <span>Query Planner</span> &rarr; <span>Exa Search API</span> &rarr; <span>Source Validator</span> &rarr; <span>Cited Report</span>
+            </div>
+            <div class="demo-tags">
+              <span>Agentic Planning</span>
+              <span>Exa Search</span>
+              <span>Claim Verification</span>
+              <span>Structured Output</span>
+            </div>
+            <div class="demo-footer">
+              <a href="#contact" class="demo-link" data-service="HealthTech Scout Demo Walkthrough">Request Live Walkthrough &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Demo 2 -->
+          <article class="demo-card">
+            <div class="demo-header">
+              <span class="demo-type">REAL-TIME VOICE AI</span>
+              <span class="demo-status">Showcase 02</span>
+            </div>
+            <h3>Voice AI Appointment Agent</h3>
+            <p class="demo-summary">
+              A sub-second conversational voice agent handling inbound scheduling, availability lookups, conflict resolution, and human handoff over real-time streaming audio.
+            </p>
+            <div class="demo-arch-flow">
+              <span>Streaming STT</span> &rarr; <span>Stateful Agent Loop</span> &rarr; <span>Calendar Tool Call</span> &rarr; <span>Low-Latency TTS</span>
+            </div>
+            <div class="demo-tags">
+              <span>Pipecat</span>
+              <span>Deepgram STT</span>
+              <span>ElevenLabs TTS</span>
+              <span>WebRTC / WebSockets</span>
+            </div>
+            <div class="demo-footer">
+              <a href="#contact" class="demo-link" data-service="Voice AI Appointment Demo Walkthrough">Request Live Walkthrough &rarr;</a>
+            </div>
+          </article>
+
+          <!-- Demo 3 -->
+          <article class="demo-card">
+            <div class="demo-header">
+              <span class="demo-type">DOMAIN KNOWLEDGE RETRIEVAL</span>
+              <span class="demo-status">Showcase 03</span>
+            </div>
+            <h3>Healthcare RAG Engine</h3>
+            <p class="demo-summary">
+              End-to-end document ingestion, semantic structure-aware chunking, hybrid dense/sparse retrieval, cross-encoder reranking, and grounded answer synthesis with exact paragraph-level citations.
+            </p>
+            <div class="demo-arch-flow">
+              <span>Ingestion &amp; Chunking</span> &rarr; <span>Hybrid Vector DB</span> &rarr; <span>Reranker</span> &rarr; <span>Grounded Synthesis</span>
+            </div>
+            <div class="demo-tags">
+              <span>Synthetic Non-PHI Data</span>
+              <span>Hybrid Retrieval</span>
+              <span>Reranking</span>
+              <span>Zero-Hallucination Guardrails</span>
+            </div>
+            <div class="demo-footer">
+              <a href="#contact" class="demo-link" data-service="Healthcare RAG Demo Walkthrough">Request Live Walkthrough &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About & Operating Model -->
+    <section class="section section-alt" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <span class="section-tag">WHY TECTELO CONSULTING</span>
+            <h2>18 Years of Enterprise Architecture Meets Hands-On Agent Engineering</h2>
+            <p>
+              Many teams struggle because they hire either high-level strategy consultants who cannot ship code, or freelance prompt engineers who lack enterprise security, scalability, and integration rigor.
+            </p>
+            <p>
+              <strong>Tectelo Consulting</strong> bridges both worlds. With nearly two decades of enterprise architecture experience &mdash; including senior architecture leadership at Humana &mdash; combined with hands-on engineering of production multi-agent, Voice AI, and RAG systems, you work directly with a principal architect from assessment through implementation.
+            </p>
+
+            <div class="cert-badges">
+              <div class="cert-pill">AWS Certified Solutions Architect &ndash; Professional</div>
+              <div class="cert-pill">TOGAF Certified Enterprise Architect</div>
+              <div class="cert-pill">SAFe Certified</div>
+              <div class="cert-pill">18+ Years Enterprise Systems</div>
+            </div>
+          </div>
+
+          <div class="operating-principles">
+            <h3>Our Operating Commitments</h3>
+            <div class="principle-item">
+              <div class="principle-num">01</div>
+              <div>
+                <h4>Focused Delivery Capacity</h4>
+                <p>We strictly limit active build engagements to <strong>one concurrent prototype delivery at a time</strong>, ensuring dedicated architectural focus and rapid turnaround.</p>
+              </div>
+            </div>
+            <div class="principle-item">
+              <div class="principle-num">02</div>
+              <div>
+                <h4>Production Patterns, Not Toy Demos</h4>
+                <p>Every architecture accounts for observability, evaluation suites, latency budgets, access controls, failure recovery, and predictable unit economics.</p>
+              </div>
+            </div>
+            <div class="principle-item">
+              <div class="principle-num">03</div>
+              <div>
+                <h4>Clean IP &amp; Entity Separation</h4>
+                <p>All engagements are contracted directly with Tectelo Consulting LLC under clear Statements of Work with full deliverable IP assignment to your organization.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact & Location Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">GET IN TOUCH &bull; LOCATION &amp; INQUIRIES</span>
+          <h2>Start with a Focused Technical Conversation</h2>
+          <p>
+            Dealing with an AI architecture bottleneck, multi-agent orchestration challenge, Voice AI latency issue, or healthcare integration? Reach out directly or schedule time via Microsoft Bookings.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Company Details & Location Card -->
+          <div class="contact-info-card">
+            <h3>Tectelo Consulting</h3>
+            <p class="contact-subtitle">AI Architecture &amp; Agent Engineering</p>
+
+            <div class="info-blocks">
+              <div class="info-block">
+                <span class="info-label">HEADQUARTERS &amp; COMPANY LOCATION</span>
+                <p class="info-value">Austin, Texas</p>
+                <p class="info-sub" style="color: #f1f5f9; font-weight: 500; margin-top: 0.15rem;">
+                  5900 Balcones Drive Ste 100<br/>
+                  Austin, TX 78731
+                </p>
+                <p class="info-sub">Serving Startups &amp; Enterprises Nationwide (Remote &amp; On-Site by Arrangement)</p>
+              </div>
+
+              <div class="info-block">
+                <span class="info-label">DIRECT EMAIL</span>
+                <p class="info-value">
+                  <a href="mailto:raj.akula@praxifyai.com" id="contactEmailLink">raj.akula@praxifyai.com</a>
+                </p>
+                <p class="info-sub">For architecture assessments, SOW inquiries &amp; advisory retainers</p>
+              </div>
+
+              <div class="info-block">
+                <span class="info-label">DIRECT PHONE</span>
+                <p class="info-value">
+                  <a href="tel:+17376103312">(737) 610-3312</a>
+                </p>
+                <p class="info-sub">Monday &ndash; Friday &bull; Central Time (CT)</p>
+              </div>
+
+              <div class="info-block">
+                <span class="info-label">PROFESSIONAL CHANNELS &amp; BOOKING</span>
+                <div class="social-links">
+                  <a href="https://www.linkedin.com/in/rajaakula" target="_blank" rel="noopener noreferrer" class="social-pill">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.78c-.9 0-1.63.73-1.63 1.63s.73 1.63 1.63 1.63 1.63-.73 1.63-1.63-.73-1.63-1.63-1.63Z"/>
+                    </svg>
+                    LinkedIn Profile &nearr;
+                  </a>
+                  <a href="#bookingModal" class="social-pill social-pill-bookings trigger-booking-modal">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+                      <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                    </svg>
+                    Microsoft Bookings Call &rarr;
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="phi-reminder">
+              <strong>Note for Healthcare Inquiries:</strong> Please do not include Protected Health Information (PHI) in this form. We will establish an executed Business Associate Agreement (BAA) prior to any PHI access.
+            </div>
+          </div>
+
+          <!-- Interactive Contact / Scope Inquiry Form -->
+          <div class="contact-form-card">
+            <h3>Request a Consultation or Custom Scope</h3>
+            <form id="contactForm" class="inquiry-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fullName">Your Name *</label>
+                  <input type="text" id="fullName" name="fullName" required placeholder="Alex Rivera" />
+                </div>
+                <div class="form-group">
+                  <label for="workEmail">Work Email *</label>
+                  <input type="email" id="workEmail" name="workEmail" required placeholder="alex@company.com" />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="companyName">Company / Organization</label>
+                  <input type="text" id="companyName" name="companyName" placeholder="Acme HealthTech Inc." />
+                </div>
+                <div class="form-group">
+                  <label for="serviceSelect">Service of Interest *</label>
+                  <select id="serviceSelect" name="serviceSelect" required>
+                    <option value="AI Architecture Assessment">AI Architecture Assessment</option>
+                    <option value="AI Agent Prototype">AI Agent Prototype</option>
+                    <option value="Voice AI Prototype">Voice AI Prototype</option>
+                    <option value="Fractional AI Architect">Fractional AI Architect</option>
+                    <option value="Healthcare AI / FHIR Architecture Inquiry">Healthcare AI / FHIR Architecture Inquiry</option>
+                    <option value="Portfolio Demo Walkthrough">Portfolio Demo Walkthrough (HealthTech Scout / Voice / RAG)</option>
+                    <option value="General Discovery Conversation">General Discovery Conversation</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="projectDetails">Technical Context or Problem Statement *</label>
+                <textarea id="projectDetails" name="projectDetails" rows="4" required placeholder="Briefly describe your current architecture, agent/Voice AI/RAG use case, timeline, and what outcome you are targeting..."></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary btn-full">Send Inquiry to raj.akula@praxifyai.com</button>
+              </div>
+              <div id="formFeedback" class="form-feedback" aria-live="polite" hidden></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Microsoft Bookings Modal -->
+  <div class="modal-overlay" id="bookingModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+        <span class="status-dot"></span>
+        <span style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-cyan);">MICROSOFT BOOKINGS</span>
+      </div>
+      <h3 id="modalTitle">Schedule a 20-Min Architecture Discovery Call</h3>
+      <p>
+        Select a convenient time directly on our Microsoft Bookings calendar to discuss your AI architecture, agent prototypes, Voice AI pipelines, or healthcare compliance requirements.
+      </p>
+      
+      <div class="modal-actions">
+        <!-- Microsoft Bookings Launch Button (dummy URL as requested) -->
+        <a href="https://outlook.office365.com/owa/calendar/TecteloConsulting@praxifyai.com/bookings/" target="_blank" rel="noopener noreferrer" class="btn btn-bookings btn-full">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+          </svg>
+          Open Microsoft Bookings Calendar &nearr;
+        </a>
+        <a href="#contact" class="btn btn-secondary btn-full" onclick="document.getElementById('bookingModal').classList.remove('active');">
+          Or Send a Written Inquiry Below &darr;
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <strong>Tectelo Consulting LLC</strong>
+          <span>AI Architecture &amp; Agent Engineering</span>
+          <small>AI Agents &bull; Voice AI &bull; Healthcare AI &bull; RAG &bull; Production Architecture</small>
+        </div>
+        <div class="footer-address">
+          <strong>Austin Headquarters:</strong><br />
+          5900 Balcones Drive Ste 100<br />
+          Austin, TX 78731<br />
+          Direct: <a href="tel:+17376103312" style="color:var(--accent-cyan);">(737) 610-3312</a> &bull; 
+          <a href="mailto:raj.akula@praxifyai.com" style="color:var(--accent-cyan);">raj.akula@praxifyai.com</a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#healthcare">Healthcare AI</a>
+        <a href="#demos">Portfolio Demos</a>
+        <a href="#about">Credentials</a>
+        <a href="#contact">Contact &amp; Location</a>
+        <a href="https://www.linkedin.com/in/rajaakula" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+      </div>
+
+      <div class="footer-copy">
+        <span>&copy; <span id="yearSpan">2026</span> Tectelo Consulting LLC. All rights reserved.</span>
+        <small>Austin, TX &bull; Operated as an independent AI architecture &amp; engineering practice.</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
