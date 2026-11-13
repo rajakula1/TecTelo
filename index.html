@@ -485,6 +485,7 @@
               <span>Structured Output</span>
             </div>
             <div class="demo-footer">
+              <button type="button" class="btn btn-outline btn-sm demo-spec-btn" data-demo="healthtech-scout">Inspect Architecture</button>
               <a href="#contact" class="demo-link" data-service="HealthTech Scout Demo Walkthrough">Request Live Walkthrough &rarr;</a>
             </div>
           </article>
@@ -509,6 +510,7 @@
               <span>WebRTC / WebSockets</span>
             </div>
             <div class="demo-footer">
+              <button type="button" class="btn btn-outline btn-sm demo-spec-btn" data-demo="voice-ai">Inspect Architecture</button>
               <a href="#contact" class="demo-link" data-service="Voice AI Appointment Demo Walkthrough">Request Live Walkthrough &rarr;</a>
             </div>
           </article>
@@ -533,6 +535,7 @@
               <span>Zero-Hallucination Guardrails</span>
             </div>
             <div class="demo-footer">
+              <button type="button" class="btn btn-outline btn-sm demo-spec-btn" data-demo="healthcare-rag">Inspect Architecture</button>
               <a href="#contact" class="demo-link" data-service="Healthcare RAG Demo Walkthrough">Request Live Walkthrough &rarr;</a>
             </div>
           </article>
@@ -731,6 +734,31 @@
         </a>
         <a href="#contact" class="btn btn-secondary btn-full" onclick="document.getElementById('bookingModal').classList.remove('active');">
           Or Send a Written Inquiry Below &darr;
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Architecture Specs Modal -->
+  <div class="modal-overlay" id="architectureModal" role="dialog" aria-modal="true" aria-labelledby="archModalTitle">
+    <div class="modal-card modal-card-lg">
+      <button class="modal-close" id="archModalCloseBtn" aria-label="Close modal">&times;</button>
+      <div style="display:flex; align-items:center; gap:0.5rem; margin-bottom:0.75rem;">
+        <span class="status-dot"></span>
+        <span id="archModalBadge" style="font-family:var(--font-mono); font-size:0.75rem; color:var(--accent-cyan); text-transform:uppercase;">SYSTEM BLUEPRINT</span>
+      </div>
+      <h3 id="archModalTitle" style="font-size:1.4rem; margin-bottom:0.75rem; color:#ffffff;">Architecture Specification</h3>
+      
+      <div id="archModalContent" class="arch-modal-content">
+        <!-- Dynamically injected via script.js -->
+      </div>
+
+      <div class="modal-actions" style="margin-top:1.5rem; display:flex; gap:0.75rem; flex-wrap:wrap;">
+        <a href="#bookingModal" class="btn btn-bookings btn-sm trigger-booking-modal" onclick="document.getElementById('architectureModal').classList.remove('active');">
+          Schedule Technical Q&amp;A Call
+        </a>
+        <a href="#contact" class="btn btn-secondary btn-sm" id="archModalInquireBtn" onclick="document.getElementById('architectureModal').classList.remove('active');">
+          Scope a Similar Build &rarr;
         </a>
       </div>
     </div>

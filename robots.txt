@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rajakula1.github.io/TecTelo/sitemap.xml
