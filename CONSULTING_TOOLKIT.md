@@ -80,3 +80,4 @@ When your official Microsoft Bookings calendar link is ready:
 
 ### Clause 2: PHI & BAA Governance
 > *"Unless explicitly covered by an executed Business Associate Agreement (BAA) appended hereto as Exhibit A, all Services, architecture reviews, and prototype testing shall be conducted exclusively using synthetic, anonymized, or non-PHI datasets and schemas. Client agrees not to transmit, disclose, or provide access to Protected Health Information (PHI) to Consultant without prior execution of said BAA."*
+
