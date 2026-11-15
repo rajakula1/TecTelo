@@ -92,6 +92,7 @@ img, svg {
 .container {
   width: 100%;
   max-width: var(--container-max);
+  min-width: 0;
   margin-left: auto;
   margin-right: auto;
   padding-left: 1.5rem;
@@ -325,29 +326,61 @@ img, svg {
 }
 
 .btn-bookings {
-  background: linear-gradient(135deg, #0078d4 0%, #106ebe 100%);
+  background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%);
   color: #ffffff;
-  box-shadow: 0 4px 14px rgba(0, 120, 212, 0.35);
+  box-shadow: 0 4px 14px rgba(14, 165, 233, 0.3);
 }
 
 .btn-bookings:hover {
-  background: linear-gradient(135deg, #106ebe 0%, #005a9e 100%);
+  background: linear-gradient(135deg, #38bdf8 0%, #1d4ed8 100%);
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(0, 120, 212, 0.5);
+  box-shadow: 0 6px 20px rgba(14, 165, 233, 0.45);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.925rem;
+  font-weight: 600;
+  color: var(--text-main);
+}
+
+.text-link::after {
+  content: '→';
+  transition: transform 0.2s ease;
+}
+
+.text-link:hover {
+  color: var(--accent-cyan);
+}
+
+.text-link:hover::after {
+  transform: translateX(3px);
 }
 
 /* Hero Section */
 .hero {
   padding: 4.5rem 0 3.5rem;
   position: relative;
-  overflow: hidden;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.15fr 0.85fr;
-  gap: 3.5rem;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  gap: 3rem;
   align-items: center;
+}
+
+.hero-grid > * {
+  min-width: 0;
+}
+
+.eyebrow-label {
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text-muted);
 }
 
 .eyebrow {
@@ -374,9 +407,7 @@ img, svg {
 }
 
 .gradient-text {
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: inherit;
 }
 
 .hero-lead {
@@ -392,21 +423,21 @@ img, svg {
 
 .hero-actions {
   display: flex;
-  gap: 1rem;
+  gap: 1.25rem;
   margin-bottom: 2.75rem;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 /* Credibility Strip */
 .credibility-strip {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem 1.5rem;
   padding: 1.25rem 1.5rem;
   background: rgba(15, 23, 42, 0.6);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  flex-wrap: wrap;
 }
 
 .cred-item {
@@ -427,9 +458,7 @@ img, svg {
 }
 
 .cred-divider {
-  width: 1px;
-  height: 28px;
-  background-color: var(--border-subtle);
+  display: none;
 }
 
 /* Architecture Blueprint Card (Hero Visual) */
@@ -440,6 +469,8 @@ img, svg {
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), var(--shadow-glow);
   overflow: hidden;
   position: relative;
+  min-width: 0;
+  max-width: 100%;
 }
 
 .arch-header {
@@ -470,6 +501,8 @@ img, svg {
   font-family: var(--font-mono);
   font-size: 0.75rem;
   color: var(--text-dim);
+  min-width: 0;
+  overflow-wrap: anywhere;
 }
 
 .arch-badge {
@@ -525,6 +558,8 @@ img, svg {
   padding: 0.3rem 0.6rem;
   border-radius: 4px;
   color: var(--text-main);
+  min-width: 0;
+  max-width: 100%;
 }
 
 .node-accent {
@@ -547,7 +582,7 @@ img, svg {
 
 .arch-footer {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 0.5rem;
   padding-top: 0.5rem;
   border-top: 1px solid var(--border-subtle);
@@ -770,6 +805,76 @@ img, svg {
 
 .service-Action {
   margin-top: auto;
+}
+
+.services-grid-summary {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.service-card-compact .service-desc {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.service-card-compact .text-link {
+  margin-top: auto;
+}
+
+.outcome-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  margin-bottom: 1.5rem;
+}
+
+.outcome-list li {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  line-height: 1.45;
+}
+
+.outcome-list li::before {
+  content: '✓';
+  color: var(--accent-cyan);
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.retainer-band {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr auto;
+  gap: 2rem;
+  align-items: center;
+  background: var(--bg-card);
+  border: 1px solid rgba(56, 189, 248, 0.35);
+  border-radius: var(--radius-lg);
+  padding: 2rem 2.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.retainer-copy h3 {
+  font-size: 1.45rem;
+  font-weight: 700;
+  margin: 0.35rem 0 0.5rem;
+  line-height: 1.25;
+}
+
+.retainer-copy p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.retainer-band .outcome-list {
+  margin-bottom: 0;
+}
+
+.retainer-band .btn {
+  white-space: nowrap;
 }
 
 /* Progression Banner */
@@ -1583,9 +1688,20 @@ img, svg {
   .hero-grid,
   .healthcare-layout,
   .about-grid,
-  .contact-grid {
-    grid-template-columns: 1fr;
+  .contact-grid,
+  .services-grid-summary,
+  .retainer-band {
+    grid-template-columns: minmax(0, 1fr);
     gap: 2.5rem;
+  }
+
+  .retainer-band {
+    align-items: start;
+    gap: 1.25rem;
+  }
+
+  .retainer-band .btn {
+    width: 100%;
   }
 
   .progression-banner {
@@ -1605,6 +1721,23 @@ img, svg {
 
   .mobile-menu-btn {
     display: flex;
+    flex-shrink: 0;
+  }
+
+  .nav-container,
+  .brand,
+  .brand-text {
+    min-width: 0;
+  }
+
+  .brand {
+    flex: 1;
+  }
+
+  .brand-sub {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
   .main-nav {
@@ -1628,13 +1761,28 @@ img, svg {
     font-size: 2.2rem;
   }
 
-  .credibility-strip {
+  .hero-actions {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
-  .cred-divider {
-    display: none;
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .main-nav .btn {
+    width: 100%;
+  }
+
+  .eyebrow code {
+    white-space: normal;
+    overflow-wrap: anywhere;
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .credibility-strip {
+    grid-template-columns: 1fr 1fr;
   }
 }
 

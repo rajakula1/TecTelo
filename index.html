@@ -24,27 +24,6 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- Top Announcement / Positioning Bar -->
-  <div class="top-bar">
-    <div class="container top-bar-inner">
-      <span class="status-pill">
-        <span class="status-dot"></span>
-        Austin, TX &bull; Accepting Q4 Architecture Assessments &amp; Fractional Retainers
-      </span>
-      <div class="top-bar-meta">
-        <span>AI Architect</span>
-        <span class="sep">&bull;</span>
-        <span>Agentic AI</span>
-        <span class="sep">&bull;</span>
-        <span>Voice AI</span>
-        <span class="sep">&bull;</span>
-        <span>RAG</span>
-        <span class="sep">&bull;</span>
-        <span>Healthcare AI</span>
-      </div>
-    </div>
-  </div>
-
   <!-- Navigation -->
   <header class="site-header" id="top">
     <div class="container nav-container">
@@ -74,12 +53,7 @@
         <a href="services.html">Services &amp; Demos</a>
         <a href="about.html">About &amp; Credentials</a>
         <a href="contact.html">Contact &amp; Location</a>
-        <a href="#bookingModal" class="btn btn-bookings btn-sm trigger-booking-modal">
-          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" style="margin-right:2px;">
-            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-          </svg>
-          Book via MS Bookings
-        </a>
+        <a href="#bookingModal" class="btn btn-primary btn-sm trigger-booking-modal">Book a call</a>
       </nav>
     </div>
   </header>
@@ -89,25 +63,17 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-content">
-          <div class="eyebrow">
-            <code>PRODUCTION AI SYSTEMS &amp; ENTERPRISE ARCHITECTURE</code>
-          </div>
+          <p class="eyebrow-label">Austin, TX · Accepting architecture assessments</p>
           <h1>
-            Turn AI Prototypes into <span class="gradient-text">Production-Ready Agentic Systems</span>
+            Turn AI prototypes into production-ready agentic systems
           </h1>
           <p class="hero-lead">
             <strong>Tectelo Consulting</strong> helps startups and engineering teams bridge the gap between fragile LLM demos and reliable production systems &mdash; specializing in multi-agent orchestration, real-time Voice AI, hybrid RAG, healthcare AI, enterprise integrations, security, and rigorous evaluation.
           </p>
 
           <div class="hero-actions">
-            <a href="services.html" class="btn btn-primary">Explore Services</a>
-            <a href="contact.html" class="btn btn-secondary">Request Architecture Review</a>
-            <a href="#bookingModal" class="btn btn-bookings trigger-booking-modal">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
-              </svg>
-              Schedule via Microsoft Bookings
-            </a>
+            <a href="#bookingModal" class="btn btn-primary trigger-booking-modal">Book a call</a>
+            <a href="services.html" class="text-link">Explore services</a>
           </div>
 
           <div class="credibility-strip">
@@ -137,11 +103,8 @@
         <div class="hero-visual" aria-label="Reference Production AI Architecture">
           <div class="arch-card">
             <div class="arch-header">
-              <div class="window-dots">
-                <span></span><span></span><span></span>
-              </div>
-              <span class="arch-title">tectelo://reference-agent-architecture.yaml</span>
-              <span class="arch-badge">PRODUCTION GRADE</span>
+              <span class="arch-title">reference-architecture</span>
+              <span class="arch-badge">Production</span>
             </div>
 
             <div class="arch-body">
@@ -182,26 +145,18 @@
 
               <div class="arch-footer">
                 <div class="metric-chip">
-                  <span class="metric-label">Voice Turn Latency</span>
+                  <span class="metric-label">Voice latency</span>
                   <span class="metric-val">&lt; 650ms</span>
                 </div>
                 <div class="metric-chip">
                   <span class="metric-label">Observability</span>
-                  <span class="metric-val">Traces + Eval Suite</span>
+                  <span class="metric-val">Traced</span>
                 </div>
                 <div class="metric-chip">
                   <span class="metric-label">Security</span>
-                  <span class="metric-val">PHI-Aware Controls</span>
+                  <span class="metric-val">PHI-aware</span>
                 </div>
               </div>
-            </div>
-          </div>
-
-          <div class="hero-image-wrap">
-            <img src="images/hero-image.webp" alt="TecTelo Enterprise AI Architecture &amp; Agent Engineering Visual" width="1376" height="768" loading="eager" />
-            <div class="hero-image-caption">
-              <span>TECTELO PRODUCTION ARCHITECTURE // AGENT STATE LOOP</span>
-              <span>ENTERPRISE GRADE</span>
             </div>
           </div>
         </div>
@@ -212,149 +167,80 @@
     <section class="section" id="services">
       <div class="container">
         <div class="section-header">
-          <span class="section-tag">PRODUCTIZED CONSULTING PORTFOLIO</span>
-          <h2>Fixed-Scope Architecture &amp; Engineering Services</h2>
+          <span class="section-tag">Services</span>
+          <h2>Fixed-scope architecture and engineering</h2>
           <p>
-            No open-ended billing surprises or junior handoffs. Every engagement is scoped around concrete technical deliverables, clear timelines, and production-grade patterns. Contact us for custom scoping and pricing.
+            Every engagement has a concrete deliverable and a clear timeline. Full scopes and deliverable lists are on the services page.
           </p>
         </div>
 
-        <div class="services-grid">
-          <!-- Service 1 -->
-          <article class="service-card">
+        <div class="services-grid services-grid-summary">
+          <article class="service-card service-card-compact">
             <div class="service-top">
               <div class="service-meta">
-                <span class="service-step">SERVICE 01 &bull; ENTRY PRODUCT</span>
-                <span class="service-time">3&ndash;5 hrs + 60-min live review</span>
+                <span class="service-step">01 · Assessment</span>
+                <span class="service-time">3–5 hrs + 60-min review</span>
               </div>
               <h3>AI Architecture Assessment</h3>
-              <div class="service-price">
-                <span class="price-amount contact-pricing">Contact for Pricing</span>
-                <span class="price-note">Fixed-scope assessment, risk audit &amp; roadmap</span>
-              </div>
-              <p class="service-desc">
-                Provide your existing architecture, product specification, or technical bottleneck. Receive a comprehensive written review, risk analysis, and concrete implementation roadmap.
-              </p>
+              <p class="service-desc">A written review of the current system, the risks in it, and a phased roadmap.</p>
             </div>
-            <div class="service-deliverables">
-              <h4>Included Deliverables</h4>
-              <ul>
-                <li>Current architecture &amp; bottleneck assessment</li>
-                <li>LLM &amp; foundation model selection recommendations</li>
-                <li>Agent orchestration &amp; tool-calling architecture</li>
-                <li>RAG pipeline &amp; retrieval accuracy assessment</li>
-                <li>Security, access-control &amp; data boundary review</li>
-                <li>Scalability, concurrency &amp; latency optimization</li>
-                <li>Token &amp; infrastructure cost optimization</li>
-                <li>Evaluation &amp; production observability strategy</li>
-                <li>Phased implementation roadmap + 60-minute live review</li>
-              </ul>
-            </div>
-            <div class="service-Action">
-              <a href="#contact" class="btn btn-outline btn-full" data-service="AI Architecture Assessment">Request Assessment Scope</a>
-            </div>
+            <ul class="outcome-list">
+              <li>Bottleneck and risk assessment</li>
+              <li>Model, RAG, and agent recommendations</li>
+              <li>Phased implementation roadmap</li>
+            </ul>
+            <a href="services.html" class="text-link">View full scope</a>
           </article>
 
-          <!-- Service 2 -->
-          <article class="service-card">
+          <article class="service-card service-card-compact">
             <div class="service-top">
               <div class="service-meta">
-                <span class="service-step">SERVICE 02 &bull; PRIMARY PROJECT</span>
-                <span class="service-time">Typically 8&ndash;15 hrs delivery</span>
+                <span class="service-step">02 · Prototype</span>
+                <span class="service-time">Typically 8–15 hrs</span>
               </div>
               <h3>AI Agent Prototype</h3>
-              <div class="service-price">
-                <span class="price-amount contact-pricing">Contact for Pricing</span>
-                <span class="price-note">Tailored to workflow &amp; tool complexity</span>
-              </div>
-              <p class="service-desc">
-                A working, clean-room proof-of-concept connecting an LLM or multi-agent framework to real business APIs, knowledge bases, and deterministic workflows.
-              </p>
+              <p class="service-desc">A working proof of concept that connects an agent to real APIs, knowledge, and deterministic workflows.</p>
             </div>
-            <div class="service-deliverables">
-              <h4>Representative Builds</h4>
-              <ul>
-                <li>Autonomous research agents using web/search tools (e.g., Exa)</li>
-                <li>Customer-support agents integrated with knowledge bases &amp; ticketing</li>
-                <li>Internal enterprise knowledge agents powered by hybrid RAG</li>
-                <li>Transactional workflow agents integrating core business APIs</li>
-                <li>Multi-agent orchestration &amp; supervisor-worker topologies</li>
-                <li>Human-in-the-loop approval &amp; confidence escalation workflows</li>
-                <li>Clean repository, architecture diagram &amp; handoff documentation</li>
-              </ul>
-            </div>
-            <div class="service-Action">
-              <a href="#contact" class="btn btn-outline btn-full" data-service="AI Agent Prototype">Scope an Agent Prototype</a>
-            </div>
+            <ul class="outcome-list">
+              <li>Tool calling against your systems</li>
+              <li>Human-in-the-loop approval gates</li>
+              <li>Repository, diagram, and handoff notes</li>
+            </ul>
+            <a href="services.html" class="text-link">View full scope</a>
           </article>
 
-          <!-- Service 3 -->
-          <article class="service-card">
+          <article class="service-card service-card-compact">
             <div class="service-top">
               <div class="service-meta">
-                <span class="service-step">SERVICE 03 &bull; SPECIALIZED BUILD</span>
-                <span class="service-time">Typically 10&ndash;20 hrs delivery</span>
+                <span class="service-step">03 · Voice</span>
+                <span class="service-time">Typically 10–20 hrs</span>
               </div>
               <h3>Voice AI Prototype</h3>
-              <div class="service-price">
-                <span class="price-amount contact-pricing">Contact for Pricing</span>
-                <span class="price-note">Real-time conversational pipeline</span>
-              </div>
-              <p class="service-desc">
-                Low-latency conversational voice agents engineered with streaming STT, TTS, WebSockets/WebRTC, Pipecat, Deepgram, ElevenLabs, and stateful interruption handling.
-              </p>
+              <p class="service-desc">A low-latency conversational agent with streaming speech, interruption handling, and a real workflow behind it.</p>
             </div>
-            <div class="service-deliverables">
-              <h4>Capabilities &amp; Use Cases</h4>
-              <ul>
-                <li>Real-time appointment scheduling &amp; calendar integration agents</li>
-                <li>Inbound/outbound lead qualification voice workflows</li>
-                <li>Customer-service &amp; automated tier-1 voice resolution</li>
-                <li>Healthcare patient intake &amp; administrative voice agents</li>
-                <li>Intelligent FAQ, triage &amp; department routing agents</li>
-                <li>Warm human escalation &amp; deterministic fallback workflows</li>
-                <li>End-to-end turn latency tuning &amp; conversational state management</li>
-              </ul>
-            </div>
-            <div class="service-Action">
-              <a href="#contact" class="btn btn-outline btn-full" data-service="Voice AI Prototype">Scope a Voice AI Build</a>
-            </div>
-          </article>
-
-          <!-- Service 4 (Featured Retainer) -->
-          <article class="service-card featured-card">
-            <div class="featured-ribbon">STRATEGIC ADVISORY TIER</div>
-            <div class="service-top">
-              <div class="service-meta">
-                <span class="service-step">SERVICE 04 &bull; RECURRING RETAINER</span>
-                <span class="service-time">Dedicated Monthly Time Box</span>
-              </div>
-              <h3>Fractional AI Architect</h3>
-              <div class="service-price">
-                <span class="price-amount contact-pricing">Contact for Pricing</span>
-                <span class="price-note">Predictable monthly senior architectural advisory</span>
-              </div>
-              <p class="service-desc">
-                Dedicated senior AI architecture leadership for startups and engineering teams that need principal-level guidance without a full-time executive hire.
-              </p>
-            </div>
-            <div class="service-deliverables">
-              <h4>Ongoing Retainer Scope</h4>
-              <ul>
-                <li>Continuous architecture reviews &amp; system design sign-off</li>
-                <li>AI technology stack, vendor &amp; model selection governance</li>
-                <li>Production multi-agent &amp; RAG architecture design</li>
-                <li>Critical PR, prompt architecture &amp; design reviews</li>
-                <li>Automated AI evaluation harnesses &amp; regression strategy</li>
-                <li>Quarterly technical roadmap development &amp; build-vs-buy analysis</li>
-                <li>Direct mentoring for internal software &amp; ML engineers</li>
-              </ul>
-            </div>
-            <div class="service-Action">
-              <a href="#contact" class="btn btn-primary btn-full" data-service="Fractional AI Architect">Inquire About Retainer Availability</a>
-            </div>
+            <ul class="outcome-list">
+              <li>Streaming speech in and out</li>
+              <li>Scheduling, intake, or routing flows</li>
+              <li>Turn-latency tuning under 650ms</li>
+            </ul>
+            <a href="services.html" class="text-link">View full scope</a>
           </article>
         </div>
+
+        <article class="retainer-band">
+          <div class="retainer-copy">
+            <span class="service-step">04 · Retainer</span>
+            <h3>Fractional AI Architect</h3>
+            <p>Monthly principal-level guidance for teams that need an architect, without hiring a full-time executive.</p>
+          </div>
+          <ul class="outcome-list">
+            <li>Design reviews and architecture sign-off</li>
+            <li>Stack, model, and vendor decisions</li>
+            <li>Mentorship for your engineers</li>
+          </ul>
+          <a href="contact.html?service=Fractional%20AI%20Architect" class="btn btn-primary" data-service="Fractional AI Architect">Ask about availability</a>
+        </article>
+
 
         <!-- Recommended Engagement Progression -->
         <div class="progression-banner">
